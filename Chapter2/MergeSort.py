@@ -26,7 +26,7 @@ def Merge(A, p, q, r) :
         k = k + 1
 
 def MergeSort(A, p, r) :
-    if r - p + 1 == 1 : return
+    if r <= p : return
     q = (p + r) // 2
     MergeSort(A, p, q)
     MergeSort(A, q + 1, r)
